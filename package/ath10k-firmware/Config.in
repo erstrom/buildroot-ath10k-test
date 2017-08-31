@@ -14,4 +14,16 @@ config BR2_PACKAGE_ATH10K_FIRMWARE_GIT_REV
         string "GIT REV"
         default "master"
 
+choice
+
+	bool "USB board"
+
+config BR2_PACKAGE_ATH10K_FIRMWARE_USB_WUSB6100M
+	bool "WUSB6100M"
+
+config BR2_PACKAGE_ATH10K_FIRMWARE_USB_SPARKLAN
+	bool "SparkLAN"
+
+endchoice
+
 endif
