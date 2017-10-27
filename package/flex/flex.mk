@@ -11,6 +11,7 @@ FLEX_LICENSE = FLEX
 FLEX_LICENSE_FILES = COPYING
 FLEX_DEPENDENCIES = $(TARGET_NLS_DEPENDENCIES) host-m4
 HOST_FLEX_DEPENDENCIES = host-m4
+HOST_FLEX_MAKE_OPTS = CFLAGS=-D_GNU_SOURCE
 
 # 0001-build-AC_USE_SYSTEM_EXTENSIONS-in-configure.ac.patch
 # 0002-build-make-it-possible-to-disable-the-build-of-the-f.patch
